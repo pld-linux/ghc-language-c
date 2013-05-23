@@ -8,8 +8,10 @@ Group:		Development/Languages
 Source0:	http://hackage.haskell.org/packages/archive/%{pkgname}/%{version}/%{pkgname}-%{version}.tar.gz
 # Source0-md5:	a6722643c8416e3baa9ebeca94c6f631
 URL:		http://hackage.haskell.org/package/language-c/
+BuildRequires:	alex
 BuildRequires:	ghc >= 6.12.3
 BuildRequires:	ghc-syb
+BuildRequires:	happy
 BuildRequires:	rpmbuild(macros) >= 1.608
 %requires_eq	ghc
 Requires:	ghc-syb
