@@ -2,7 +2,7 @@
 Summary:	A Haskell binding to the language-c graphics library
 Name:		ghc-%{pkgname}
 Version:	0.3.2.1
-Release:	0.1
+Release:	1
 License:	BSD
 Group:		Development/Languages
 Source0:	http://hackage.haskell.org/packages/archive/%{pkgname}/%{version}/%{pkgname}-%{version}.tar.gz
