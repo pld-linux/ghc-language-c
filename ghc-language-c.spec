@@ -1,12 +1,12 @@
 %define		pkgname	language-c
 Summary:	A Haskell binding to the language-c graphics library
 Name:		ghc-%{pkgname}
-Version:	0.3.2.1
+Version:	0.8.3
 Release:	1
 License:	BSD
 Group:		Development/Languages
 Source0:	http://hackage.haskell.org/packages/archive/%{pkgname}/%{version}/%{pkgname}-%{version}.tar.gz
-# Source0-md5:	a6722643c8416e3baa9ebeca94c6f631
+# Source0-md5:	910b20d8348cd353a0c3e8b928caf73b
 URL:		http://hackage.haskell.org/package/language-c/
 BuildRequires:	alex
 BuildRequires:	ghc >= 6.12.3
