@@ -1,20 +1,38 @@
 %define		pkgname	language-c
 Summary:	A Haskell binding to the language-c graphics library
 Name:		ghc-%{pkgname}
-Version:	0.8.3
-Release:	2
+Version:	0.9.0.2
+Release:	1
 License:	BSD
 Group:		Development/Languages
 Source0:	http://hackage.haskell.org/packages/archive/%{pkgname}/%{version}/%{pkgname}-%{version}.tar.gz
-# Source0-md5:	910b20d8348cd353a0c3e8b928caf73b
+# Source0-md5:	63c8416afbd4e4acdb446981951614e1
 URL:		http://hackage.haskell.org/package/language-c/
 BuildRequires:	alex
 BuildRequires:	ghc >= 6.12.3
-BuildRequires:	ghc-syb
+BuildRequires:	ghc-array
+BuildRequires:	ghc-base >= 4.8
+BuildRequires:	ghc-bytestring >= 0.9.0
+BuildRequires:	ghc-containers >= 0.3
+BuildRequires:	ghc-deepseq >= 1.4.0.0
+BuildRequires:	ghc-directory
+BuildRequires:	ghc-filepath
+BuildRequires:	ghc-mtl
+BuildRequires:	ghc-pretty
+BuildRequires:	ghc-process
 BuildRequires:	happy
 BuildRequires:	rpmbuild(macros) >= 1.608
 %requires_eq	ghc
-Requires:	ghc-syb
+Requires:	ghc-array
+Requires:	ghc-base >= 4.8
+Requires:	ghc-bytestring >= 0.9.0
+Requires:	ghc-containers >= 0.3
+Requires:	ghc-deepseq >= 1.4.0.0
+Requires:	ghc-directory
+Requires:	ghc-filepath
+Requires:	ghc-mtl
+Requires:	ghc-pretty
+Requires:	ghc-process
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # debuginfo is not useful for ghc
